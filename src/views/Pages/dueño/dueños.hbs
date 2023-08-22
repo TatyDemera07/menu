@@ -1,0 +1,53 @@
+<style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+</style>
+    <div class="col-md-12" style="margin-bottom: 5px; ">
+        <div class="card text-center border border-primary">
+            <h3 class="card-title text-uppercase" style="color: rgb(44, 142, 253);">
+                Equipo
+            </h3>
+        </div>
+    </div>
+<link rel="stylesheet" href="/css/teams.css" />
+<form action="/dueños/dueños" method="POST">
+ <div id="inputBox">
+      <label>Nombre Dueño</label>
+      <input
+        type="text"
+        class="form-control"
+        name="nombre_dueño"
+        placeholder="Nombre Dueño"
+      />
+    </div>
+    <div id="inputBox">
+      <label> Apellido Dueño,</label>
+      <input
+        type="text"
+        name="apellido_dueño"
+        class="form-control"
+        placeholder="Apellido Dueño"
+      />
+    </div>
+    <div id="inputBox">
+      <label> Correo Electronico<label
+        type="text"
+        name='correo_electronico'
+        class="form-control"
+        placeholder="Correo Electronico<"
+      />
+    </div>
+        <div id="inputBox">
+      <label>Telefono</label>
+      <input
+        type="text"
+        name="telefono"
+        class="form-control"
+        placeholder="Telefono"
+      />
+    </div>
+    <div id="inputBox">
+      <input type="submit" value="Guardar" />
+    </div>
+  </div>
+</form>

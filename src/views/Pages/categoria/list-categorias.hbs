@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/cards.css">
+<div class="col-md-12" style="margin-bottom: 5px; ">
+    <div class="card text-center border border-primary">
+        <h3 class="card-title text-uppercase" style="color: rgb(44, 142, 253);">
+            Lista de categorias
+        </h3>
+    </div>
+</div>
+<a class="color" href="/categorias/add">Añadir equipo </a>
+{{#each categorias}}
+<div class="card-body">
+    <p>{{nombre_Categoria}}</p>
+    <p>{{descripcion}}</p>
+    {{#if foto}}
+    <img class="card__image" src="/{{foto}}" loading="lazy" alt="User Profile">
+    {{else}}
+    <img src="/not-found/not-found-image.png" class="card__image" alt="..." alt="User Profile">
+    {{/if}}
+    <center>
+        <a href="/categorias/delete-categorias/{{id}}" class="danger">Eliminar</a>
+        <a href="/categorias/edit-categorias/{{id}}" class="secondary">Editar</a>
+        <form action="/categorias/foto-categoria/{{id}}" method="POST" encType="multipart/form-data">
+            <input type="file" name="sampleFile" accept="image/*" />
+            <input type="submit">
+        </form>
+    </center>
+</div>
+{{else}}
+<center>
+    <p>No hay registro guardados a un </p>
+    <a href="/categorias/add"> Agrega uno haciendo click aqui</a>
+</center>
+{{/each}}

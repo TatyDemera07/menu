@@ -1,0 +1,42 @@
+<div class="col-md-12" style="margin-bottom: 5px; ">
+    <div class="card text-center border border-primary">
+        <h3 class="card-title text-uppercase" style="color: rgb(44, 142, 253);">
+            Editar dulces
+        </h3>
+    </div>
+</div>
+<link rel="stylesheet" href="/css/teams.css">
+<div class="card-body">
+    <form action="/teams/edit-teams/{{team.id}}" method="POST">
+        <div id="logo"></div>
+        <div id="title">Crear</div>
+        <div id="sub-title">dulce a ser agregado</div>
+        <div id="input">
+            <div id="inputBox">
+                <label>nombre dulce</label>
+                <input type="text" value="{{dulce.nombre_dulce}}" name="nombre_dulce" class="form-control"
+                    placeholder="Nombre Dulce" />
+            </div>
+            <div id="inputBox">
+                <label>descripcion</label>
+                <input type="text" value="{{dulce.descripcion}}" name="descripcion" class="form-control"
+                    placeholder="Descripcion" />
+            </div>
+            <div id="inputBox">
+                <label>precio</label>
+                <input type="text" value="{{dulce.precio}}" class="form-control" name="precio"
+                    placeholder="Precioo" autofocus />
+            </div>
+            <div id="inputBox">
+                <input type="submit" value="Guardar" />
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+

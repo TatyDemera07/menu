@@ -1,0 +1,50 @@
+<style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+</style>
+    <div class="col-md-12" style="margin-bottom: 5px; ">
+        <div class="card text-center border border-primary">
+            <h3 class="card-title text-uppercase" style="color: rgb(44, 142, 253);">
+                Equipo
+            </h3>
+        </div>
+    </div>
+<link rel="stylesheet" href="/css/teams.css" />
+<form action="/restaurante/restaurante" method="POST">
+  <div id="logo"></div>
+  <div id="title">Agregar</div>
+  <div id="sub-title"></div>
+  <div id="input">
+
+    <div id="inputBox">
+      <label>Mombre Restaurante </label>
+      <input
+        type="text"
+        class="form"
+        name="nombre_restaurante"
+        placeholder="Nombre Restaurante"
+      />
+    </div>
+    <div id="inputBox">
+      <label>Descripcion</label>
+      <input
+        type="text"
+        name="descripcion"
+        class="form-control"
+        placeholder="Descripcion"
+      />
+    </div>
+    <div id="inputBox">
+      <label>Telefono</label>
+      <input
+        type="text"
+        name="telefono"
+        class="form-control"
+        placeholder="Telefono"
+      />
+    </div>
+    <div id="inputBox">
+      <input type="submit" value="Guardar" />
+    </div>
+  </div>
+</form>

@@ -1,0 +1,42 @@
+<div class="col-md-12" style="margin-bottom: 5px; ">
+    <div class="card text-center border border-primary">
+        <h3 class="card-title text-uppercase" style="color: rgb(44, 142, 253);">
+            Editar restaurante
+        </h3>
+    </div>
+</div>
+<link rel="stylesheet" href="/css/teams.css">
+<div class="card-body">
+    <form action="/teams/edit-teams/{{team.id}}" method="POST">
+        <div id="logo"></div>
+        <div id="title">Crear</div>
+        <div id="sub-title">restaurante a ser agregado</div>
+        <div id="input">
+            <div id="inputBox">
+                <label>nombre restaurante</label>
+                <input type="text" value="{{restaurante.nombre_restaurante}}" name="nombre restaurante" class="form-control"
+                    placeholder="nombre restaurante" />
+            </div>
+            <div id="inputBox">
+                <label>descripcion</label>
+                <input type="text" value="{{restaurante.descripcion}}" name="descripcion" class="form-control"
+                    placeholder="descripcion" />
+            </div>
+            <div id="inputBox">
+                <label>telefono</label>
+                <input type="text" value="{{restaurante.telefono}}" class="form-control" name="telefono"
+                    placeholder="telefono" autofocus />
+            </div>
+            <div id="inputBox">
+                <input type="submit" value="Guardar" />
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
