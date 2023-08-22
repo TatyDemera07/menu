@@ -1,76 +1,19 @@
-.menu {
-    padding: 50px;
-    text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
-.menu-item {
-    margin-bottom: 30px;
-}
-
-.menu-item img {
-    max-width: 50%;
-    border-radius: 5px;
-}
-
-.price {
-    display: block;
-    font-weight: bold;
-    color: #FFC107;
-}
-.registration {
-    background-color: #f4f4f4;
-    padding: 50px;
-    text-align: center;
-}
-
-.registration form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.registration label {
-    margin-bottom: 10px;
-}
-
-.registration input {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #a1a0a0;
-    border-radius: 5px;
-}
-
-.registration input[type="submit"] {
-    background-color: #07fff7;
-    color: #333;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+
 }
 
 /* Estilos del encabezado */
 .header {
-    background-color: #0bcfdd;
+    background-color: rgb(39, 231, 231);
     color: #fff;
     padding: 10px;
 }
 
-#icon-container2 img {
-    display: inline-block;
-    width: 85px;
-    height: 85px;
-    left: 10px;
-    padding: 10px;
-    position: absolute;
-    margin: -3% auto;
-
-}
 
 .logo {
     font-size: 24px;
@@ -297,6 +240,6 @@ body {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #cfd7ee;
+    border: 1px solid #3654b1;
     border-radius: 3px;
 }
